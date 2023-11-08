@@ -1,0 +1,28 @@
+/*Header line codes*/
+header {
+  width: 100%;
+  margin: 0;
+  height: 140px;
+  border-bottom: solid;
+  border-bottom-width: 4px;
+  border-color: aliceblue;
+  display: flex;
+  align-items: center;
+  box-shadow: color-mix(in srgb, black 80%, blue 20%);
+}
+
+header h1 {
+  margin: 5%;
+  font-weight: bold;
+  flood-opacity: 100%;
+  color: white;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+/*Body line codes*/
+
+body {
+  background-color: rgb(78, 78, 78);
+}
