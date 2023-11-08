@@ -24,5 +24,7 @@ header h1 {
 /*Body line codes*/
 
 body {
-  background-color: rgb(78, 78, 78);
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
