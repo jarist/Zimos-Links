@@ -25,6 +25,39 @@ header h1 {
 
 body {
   background-image: url("background.png");
+  background-color: #464646;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: 100%;
+}
+
+body .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+body .container .left {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border-style: dashed;
+  height: 560px;
+}
+
+body .container .right {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 110px;
+  border-style: dashed;
+}
+
+/*Footer line codes*/
+footer {
+  width: 100%;
+  border-style: dashed;
 }
