@@ -8,7 +8,6 @@ header {
   border-color: aliceblue;
   display: flex;
   align-items: center;
-  box-shadow: color-mix(in srgb, black 80%, blue 20%);
 }
 
 header h1 {
@@ -26,10 +25,12 @@ header h1 {
 body {
   background-image: url("background.png");
   background-color: #464646;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body .container {
@@ -45,19 +46,46 @@ body .container .left {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
-  border-style: dashed;
-  height: 560px;
+  border-right: solid;
+  border-color: white;
 }
 
 body .container .right {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 110px;
+  flex-basis: 460px;
   border-style: dashed;
 }
 
+/*Body link line codes*/
+
+body .container .left .links {
+  display: flex;
+  flex-direction: row;
+}
+
+body .container .left .links .capsule a {
+  background-color: rgb(187, 176, 248);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+body .container .left .links .capsule a:hover {
+  background-color: #753e8e;
+  color: white;
+}
+
 /*Footer line codes*/
+
 footer {
   width: 100%;
-  border-style: dashed;
+  border-style: solid;
+  border-color: rgb(134, 134, 134);
 }
