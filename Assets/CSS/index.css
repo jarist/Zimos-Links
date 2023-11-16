@@ -23,14 +23,12 @@ header h1 {
 /*Body line codes*/
 
 body {
-  background-image: url("background.png");
+  background: #ffffff url("background.png") center center/cover no-repeat fixed;
+  background-size: auto 100%;
   background-color: #464646;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  max-width: 100%;
-  height: auto;
+  max-height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 body .container {
@@ -43,20 +41,19 @@ body .container {
 }
 
 body .container .left {
-  flex-grow: 1;
+  flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  border-right: solid;
-  border-color: white;
+  border-style: dashed;
+  height: 560px;
+  flex-basis: 20%;
 }
 
 body .container .right {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 460px;
   border-style: dashed;
 }
-
 /*Body link line codes*/
 
 body .container .left .links {
