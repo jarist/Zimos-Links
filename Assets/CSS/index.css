@@ -38,6 +38,12 @@ body .container {
   justify-content: space-around;
   align-items: center;
   align-content: stretch;
+  height: auto;
+}
+
+body .container p {
+  color: #e6e6e6;
+  font-size: 30px;
 }
 
 body .container .left {
@@ -72,6 +78,7 @@ body .container .left .links .capsule a {
   cursor: pointer;
   border-radius: 16px;
   transition: 0.3s;
+  font-size: 20px;
 }
 
 body .container .left .links .capsule a:hover {
