@@ -51,8 +51,9 @@ body .container .left {
   flex-shrink: 1;
   flex-basis: auto;
   border-style: dashed;
-  height: 560px;
+  height: auto;
   flex-basis: 20%;
+  background-color: #0000004b;
 }
 
 body .container .right {
@@ -78,12 +79,23 @@ body .container .left .links .capsule a {
   cursor: pointer;
   border-radius: 16px;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 body .container .left .links .capsule a:hover {
   background-color: #753e8e;
   color: white;
+}
+
+body .aboutme {
+  color: #ffffff;
+}
+
+body .star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 /*Footer line codes*/
@@ -92,4 +104,5 @@ footer {
   width: 100%;
   border-style: solid;
   border-color: rgb(134, 134, 134);
+  color: #ffffff;
 }
