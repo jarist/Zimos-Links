@@ -20,6 +20,10 @@ header h1 {
   font-size: 100px;
 }
 
+header .glow {
+  text-shadow: 0 0 7px #c800ff, 0 0 10px #c800ff, 0 0 21px #e045cb,
+    0 0 42px #e045cb, 0 0 82px #e045cb;
+}
 /*Body line codes*/
 
 body {
@@ -66,10 +70,13 @@ body .container .right {
 body .container .left .links {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 body .container .left .links .capsule a {
-  background-color: rgb(187, 176, 248);
+  background: linear-gradient(to right top, #c800ff, #e045cb);
   border: none;
   color: black;
   padding: 10px 20px;
@@ -83,7 +90,7 @@ body .container .left .links .capsule a {
 }
 
 body .container .left .links .capsule a:hover {
-  background-color: #753e8e;
+  background: linear-gradient(to right top, #d52bf3, #ff47e6);
   color: white;
 }
 
