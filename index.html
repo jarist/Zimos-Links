@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zimos</title>
     <meta content="Zimos" property="og:title" />
-    <meta content="Just a good, Goofing around " property="og:description" />
+    <meta content="Just a Goof, goofing around " property="og:description" />
     <meta content="https://zimos.com" property="og:url" />
   </head>
   <header>
@@ -84,10 +84,34 @@
           </p>
         </div>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <div id="menu" class="menu">
+          <ul>
+            <strong><h2>Monday</h2></strong>
+            <strong><h2>Tuesday</h2></strong>
+            <strong><h2>Wednesday</h2></strong>
+            <strong><h2>Thursday</h2></strong>
+            <strong><h2>Friday</h2></strong>
+            <strong><h2>Saturday</h2></strong>
+            <strong><h2>Sunday</h2></strong>
+          </ul>
+        </div>
+        <!-- Button to open the menu-->
+        <div class="menu-btn" onclick="toggleMenu()">Menu</div>
+      </div>
     </div>
   </body>
   <footer>
     <p>Made with Monster Energy and Cookie addiction</p>
   </footer>
 </html>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display =
+      menu.style.display === "none" || menu.style.display === ""
+        ? "block"
+        : "none";
+  }
+</script>

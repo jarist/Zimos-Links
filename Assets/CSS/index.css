@@ -65,11 +65,39 @@ body .container .left {
 }
 
 body .container .right {
+  display: flex;
   flex-grow: 1;
   flex-shrink: 1;
   border-style: dashed;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+/* Add this style in your CSS */
+.menu-btn {
+  background: linear-gradient(to right top, #c800ff, #e045cb);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: 0.3s;
+  font-size: 25px;
+  width: fit-content;
+}
+
+.menu {
+  display: none;
+  border: solid gray;
+  width: fit-content;
+}
+
+.menu h2 {
+  color: white;
+}
 /*Body link line codes*/
 
 body .container .left .links {
