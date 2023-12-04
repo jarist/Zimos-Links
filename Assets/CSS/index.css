@@ -41,8 +41,8 @@ body .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
   align-content: stretch;
   height: auto;
 }
@@ -55,7 +55,6 @@ body .container p {
 body .container .left {
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: auto;
   border-style: dashed;
   height: auto;
   flex-basis: 20%;
@@ -69,7 +68,7 @@ body .container .right {
   flex-grow: 1;
   flex-shrink: 1;
   border-style: dashed;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
@@ -119,6 +118,10 @@ body .star {
 
 /* Menu right sidet*/
 .menu-btn {
+  display: flex;
+  width: 20px;
+  height: fit-content;
+  flex-wrap: wrap;
   background: linear-gradient(to right top, #c800ff, #e045cb);
   border: none;
   color: black;
@@ -129,7 +132,11 @@ body .star {
   border-radius: 16px;
   transition: 0.3s;
   font-size: 25px;
-  width: fit-content;
+
+  /* Added properties for text overflow */
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Optional: Adds an ellipsis (...) if the text overflows */
 }
 
 .menu {
@@ -219,4 +226,15 @@ footer {
   background-color: #0000006e;
   font-size: 21px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .right {
+    flex-direction: column;
+  }
+
+  .container {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
